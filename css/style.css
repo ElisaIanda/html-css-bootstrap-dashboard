@@ -1,6 +1,6 @@
 .small-logo {
     width: 42px;
-    height: 42px;
+    height: 32px;
 }
 
 .small-logo>img {
@@ -20,6 +20,48 @@
     border-bottom-right-radius: var(--bs-border-radius);
 }
 
+.row-main-content>.main-dashboard {
+    padding-left: 0;
+}
+
+.dashboard-header .badge {
+    background-color: var(--bs-link-hover-color);
+    padding: 0.6em;
+}
+
+table .fa-code{
+    background-color: var(--bs-orange);
+    padding: 1rem 0.5rem;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    line-height: 0px;
+}
+
+table .btn{
+    border: 1px solid #5b5858;
+    vertical-align: middle;
+}
+
+table .btn svg{
+    vertical-align: baseline;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+
+table .badge{
+    width: 60px;
+}
+
+.font-size{
+    font-size: 14px;
+}
+
+.table>:not(caption)>*>* {
+    padding: 0.5rem 0;
+}
+
 @media screen and (min-width: 992px) {
     .big-logo {
         display: inline-block;
@@ -28,4 +70,5 @@
     .small-logo {
         display: none;
     }
+
 }
