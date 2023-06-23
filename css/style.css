@@ -1,0 +1,31 @@
+.small-logo {
+    width: 42px;
+    height: 42px;
+}
+
+.small-logo>img {
+    width: 100%;
+}
+
+.big-logo {
+    display: none;
+}
+
+.background-color-cerca {
+    background-color: #e5e5e5;
+}
+
+.border-top-bottom-cerca {
+    border-top-right-radius: var(--bs-border-radius);
+    border-bottom-right-radius: var(--bs-border-radius);
+}
+
+@media screen and (min-width: 992px) {
+    .big-logo {
+        display: inline-block;
+    }
+
+    .small-logo {
+        display: none;
+    }
+}
