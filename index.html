@@ -154,7 +154,432 @@
                 </div>
                 <div class="col main-dashboard">
                     <!-- main dashboard -->
-                    
+                    <div class="container-fluid overflow-auto" style="height: calc(100vh - 58px); width: 100%;">
+                        <div class="row bg-primary text-white">
+                            <div class="col-12 py-2 dashboard-header">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3 d-flex order-md-3 justify-content-lg-end">
+                                        <div>Nuovo Studente</div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
+                                            fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="col-md-6 order-md-1">
+                                        <h1 class="d-inline-block">Boolean</h1>
+                                        <span class="badge ml-3 fw-normal">Piano blaze</span>
+                                        <div class="badge-line">
+                                            <span class="badge ml-3 fw-normal">3 app</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-double-right"
+                                                viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                            <span class="badge mb-1 d-none d-lg-inline-block ml-3 fw-normal">Boolean mobile app</span>
+                                            <span class="badge d-none d-lg-inline-block ml-3 fw-normal">Boolean web app</span>
+                                            <span class="badge d-none d-lg-inline-block ml-3 fw-normal">Boolean blog app</span>
+                                            <div class="dropdown d-inline-block d-lg-none">
+                                                <button class="btn badge dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 50%;
+                                                    padding: 0.6em;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                        fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Boolean mobile app</a></li>
+                                                    <li><a class="dropdown-item" href="#">Boolean web app</a></li>
+                                                    <li><a class="dropdown-item" href="#">Boolean blog app</a></li>
+                                                </ul>
+                                            </div>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 order-md-2">
+                                        <div class="font-size">Studenti online negli ultimi 30 minuti</div>
+                                        <div class="fs-3"><b>125</b></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-8 py-4">
+                                <div class="card">
+                                    <h5 class="card-header">Prossime Classi</h5>
+                                    <div class="card-body">
+                                        <table class="table" style="vertical-align: middle;">
+                                            <thead>
+                                                <tr class="text-center">
+                                                    <th scope="col" class="text-start width-different">Nome</th>
+                                                    <th scope="col" class="d-none d-md-table-cell">Data inizio</th>
+                                                    <th scope="col" class="d-none d-md-table-cell">ROI</th>
+                                                    <th scope="col">Stato</th>
+                                                    <th scope="col">Azioni</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="text-center">
+                                                    <th scope="row" class="text-start fw-normal">
+                                                        <i class="fa-solid fa-code"></i>
+                                                        <span class="d-block d-sm-inline-block">Classe 75</span>
+                                                    </th>
+                                                    <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                                    <td class="d-none d-md-table-cell">20%</td>
+                                                    <td><span class="badge bg-success">Done</span></td>
+                                                    <td>
+                                                        <button type="button" class="btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="#5b5858" class="bi bi-pencil-fill"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                        <button type="button" class="btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="#5b5858" class="bi bi-trash3-fill"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <th scope="row" class="text-start fw-normal">
+                                                        <i class="fa-solid fa-code"></i>
+                                                        <span class="d-block d-sm-inline-block">Classe 76</span>
+                                                    </th>
+                                                    <td class="d-none d-md-table-cell">16 Feb 2021</td>
+                                                    <td class="d-none d-md-table-cell">20%</td>
+                                                    <td><span class="badge bg-success">Done</span></td>
+                                                    <td><button type="button" class="btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="#5b5858" class="bi bi-pencil-fill"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                        <button type="button" class="btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="#5b5858" class="bi bi-trash3-fill"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <th scope="row" class="text-start fw-normal">
+                                                        <i class="fa-solid fa-code"></i>
+                                                        <span class="d-block d-sm-inline-block">Classe 77</span>
+                                                    </th>
+                                                    <td class="d-none d-md-table-cell">17 Feb 2021</td>
+                                                    <td class="d-none d-md-table-cell">20%</td>
+                                                    <td><span class="badge bg-warning">Process</span></td>
+                                                    <td>
+                                                        <button type="button" class="btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="#5b5858" class="bi bi-pencil-fill"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                        <button type="button" class="btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="#5b5858" class="bi bi-trash3-fill"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <th scope="row" class="text-start fw-normal">
+                                                        <i class="fa-solid fa-code"></i>
+                                                        <span class="d-block d-sm-inline-block">Classe 78</span>
+                                                    </th>
+                                                    <td class="d-none d-md-table-cell">18 Feb 2021</td>
+                                                    <td class="d-none d-md-table-cell">20%</td>
+                                                    <td><span class="badge bg-success">Done</span></td>
+                                                    <td>
+                                                        <button type="button" class="btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="#5b5858" class="bi bi-pencil-fill"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                        <button type="button" class="btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="#5b5858" class="bi bi-trash3-fill"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <th scope="row" class="text-start fw-normal">
+                                                        <i class="fa-solid fa-code"></i>
+                                                        <span class="d-block d-sm-inline-block">Classe 79</span>
+                                                    </th>
+                                                    <td class="d-none d-md-table-cell">19 Feb 2021</td>
+                                                    <td class="d-none d-md-table-cell">20%</td>
+                                                    <td><span class="badge bg-danger">Failed</span></td>
+                                                    <td>
+                                                        <button type="button" class="btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="#5b5858" class="bi bi-pencil-fill"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                        <button type="button" class="btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="#5b5858" class="bi bi-trash3-fill"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <th scope="row" class="text-start fw-normal">
+                                                        <i class="fa-solid fa-code"></i>
+                                                        <span class="d-block d-sm-inline-block">Classe 80</span>
+                                                    </th>
+                                                    <td class="d-none d-md-table-cell">20 Feb 2021</td>
+                                                    <td class="d-none d-md-table-cell">20%</td>
+                                                    <td><span class="badge bg-success">Done</span></td>
+                                                    <td>
+                                                        <button type="button" class="btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="#5b5858" class="bi bi-pencil-fill"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                        <button type="button" class="btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="#5b5858" class="bi bi-trash3-fill"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <th scope="row" class="text-start fw-normal">
+                                                        <i class="fa-solid fa-code"></i>
+                                                        <span class="d-block d-sm-inline-block">Classe 81</span>
+                                                    </th>
+                                                    <td class="d-none d-md-table-cell">21 Feb 2021</td>
+                                                    <td class="d-none d-md-table-cell">20%</td>
+                                                    <td><span class="badge bg-danger">Failed</span></td>
+                                                    <td>
+                                                        <button type="button" class="btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="#5b5858" class="bi bi-pencil-fill"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                        <button type="button" class="btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="#5b5858" class="bi bi-trash3-fill"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <th scope="row" class="text-start fw-normal">
+                                                        <i class="fa-solid fa-code"></i>
+                                                        <span class="d-block d-sm-inline-block">Classe 82</span>
+                                                    </th>
+                                                    <td class="d-none d-md-table-cell">22 Feb 2021</td>
+                                                    <td class="d-none d-md-table-cell">20%</td>
+                                                    <td><span class="badge bg-success">Done</span></td>
+                                                    <td>
+                                                        <button type="button" class="btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="#5b5858" class="bi bi-pencil-fill"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                        <button type="button" class="btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="#5b5858" class="bi bi-trash3-fill"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="card my-4">
+                                    <h5 class="card-header">Featured</h5>
+                                    <div class="card-body">
+                                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                        aria-expanded="false" aria-controls="flush-collapseOne">
+                                                        Accordion Item #1
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">Placeholder content for this
+                                                        accordion, which is intended to demonstrate the
+                                                        <code>.accordion-flush</code> class. This is the first
+                                                        item's accordion body.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                        aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                        Accordion Item #2
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">Placeholder content for this
+                                                        accordion, which is intended to demonstrate the
+                                                        <code>.accordion-flush</code> class. This is the second
+                                                        item's accordion body. Let's imagine this being filled with
+                                                        some actual content.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                        aria-expanded="false" aria-controls="flush-collapseThree">
+                                                        Accordion Item #3
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">Placeholder content for this
+                                                        accordion, which is intended to demonstrate the
+                                                        <code>.accordion-flush</code> class. This is the third
+                                                        item's accordion body. Nothing more exciting happening here
+                                                        in terms of content, but just filling up the space to make
+                                                        it look, at least at first glance, a bit more representative
+                                                        of how this would look in a real-world application.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 py-4">
+                                <div class="card">
+                                    <h5 class="card-header">Todo</h5>
+                                    <div class="card-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value=""
+                                                    id="firstCheckbox">
+                                                <label class="form-check-label" for="firstCheckbox">First
+                                                    checkbox</label>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value=""
+                                                    id="secondCheckbox">
+                                                <label class="form-check-label" for="secondCheckbox">Second
+                                                    checkbox</label>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value=""
+                                                    id="thirdCheckbox">
+                                                <label class="form-check-label" for="thirdCheckbox">Third
+                                                    checkbox</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="card my-4">
+                                    <div class="card m-3">
+                                        <img src="img/stats.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Utenti attivi</h5>
+                                            <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo
+                                                mese</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Gennaio: 1200</li>
+                                            <li class="list-group-item">Febbraio: 800</li>
+                                            <li class="list-group-item">Marzo: 1500</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <a href="#" class="card-link">Visualizza report approfondito</a>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
