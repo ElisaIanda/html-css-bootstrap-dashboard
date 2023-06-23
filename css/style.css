@@ -15,10 +15,14 @@
     background-color: #e5e5e5;
 }
 
-.border-top-bottom-cerca {
+.input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3),
+.input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-control,
+.input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-select,
+.input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
     border-top-right-radius: var(--bs-border-radius);
     border-bottom-right-radius: var(--bs-border-radius);
 }
+
 
 .row-main-content>.main-dashboard {
     padding-left: 0;
@@ -29,7 +33,7 @@
     padding: 0.6em;
 }
 
-table .fa-code{
+table .fa-code {
     background-color: var(--bs-orange);
     padding: 1rem 0.5rem;
     border-radius: 50%;
@@ -38,12 +42,12 @@ table .fa-code{
     line-height: 0px;
 }
 
-table .btn{
+table .btn {
     border: 1px solid #5b5858;
     vertical-align: middle;
 }
 
-table .btn svg{
+table .btn svg {
     vertical-align: baseline;
 }
 
@@ -51,11 +55,11 @@ table .btn svg{
     display: none;
 }
 
-table .badge{
+table .badge {
     width: 60px;
 }
 
-.font-size{
+.font-size {
     font-size: 14px;
 }
 
