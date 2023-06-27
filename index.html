@@ -73,14 +73,23 @@
                             </path>
                         </svg>
                     </button>
-                    <button type="button" class="btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff8f00"
-                            class="bi bi-bell-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z">
-                            </path>
-                        </svg>
-                    </button>
+
+                    <div class="btn-group dropstart">
+                        <button type="button" class="btn" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff8f00"
+                                class="bi bi-bell-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z">
+                                </path>
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Profilo</a></li>
+                            <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -96,51 +105,49 @@
                 <div class=" col-auto col-xxl-2 px-sm-2 px-0" style="background-color: #051e34;">
                     <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white"
                         style="height: calc(100vh - 58px);">
-                        <ul class="nav nav-pills flex-column mb-sm-auto mb-auto align-items-center align-items-sm-start"
+                        <ul class="nav  flex-column mb-sm-auto mb-auto align-items-center align-items-sm-start "
                             id="menu">
-                            <li class="nav-item">
+                            <li class="nav-item p-1">
                                 <a href="#" class="nav-link align-middle px-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#fff"
                                         class="bi bi-house-door-fill align-middle" viewBox="0 0 16 16">
                                         <path
                                             d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
                                     </svg>
-                                    <span class="ms-1 d-none d-sm-inline align-middle text">Home</span>
+                                    <span class="ms-1 d-none d-sm-inline align-middle">Home</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <li class="nav-item p-1">
+                                <a href="#" class="nav-link align-middle px-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#fff"
                                         class="bi bi-reception-3 align-middle" viewBox="0 0 16 16">
                                         <path
                                             d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4 8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
                                     </svg>
-                                    <span class="ms-1 d-none d-sm-inline align-middle">Stats</span> </a>
-                                <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
-                                    <li class="w-100">
-                                        <a href="#" class="nav-link px-0">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#fff"
-                                                class="bi bi-bar-chart-fill align-middle" viewBox="0 0 16 16"
-                                                style="margin-left:-4px;">
-                                                <path
-                                                    d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2z" />
-                                            </svg>
-                                            <span class="d-none d-sm-inline align-middle ml-1">Signal</span></a>
-                                    </li>
-                                </ul>
+                                    <span class="ms-1 d-none d-sm-inline align-middle">Stats</span>
+                                </a>
+                            </li>
+                            <li class="nav-item p-1">
+                                <a href="#" class="nav-link align-middle px-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#fff"
+                                        class="bi bi-bar-chart-fill align-middle" viewBox="0 0 16 16">
+                                        <path
+                                            d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2z" />
+                                    </svg>
+                                    <span class="ms-1 d-none d-sm-inline align-middle">Signals</span>
+                                </a>
                             </li>
                         </ul>
                         <hr>
                         <div class="dropdown pb-4">
-                            <a href="#"
-                                class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                            <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle"
                                 id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#fff"
                                     class="bi bi-gear-fill" viewBox="0 0 16 16">
                                     <path
                                         d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
                                 </svg>
-                                <span class="d-none d-sm-inline mx-1">Admin</span>
+                                <span class="d-none d-sm-inline mx-1 text-white">Admin</span>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
                                 <li><a class="dropdown-item" href="#">New project...</a></li>
@@ -160,15 +167,127 @@
                         <div class="row bg-primary text-white">
                             <div class="col-12 py-2 dashboard-header">
                                 <div class="row align-items-center">
-                                    <div class="col-md-3 d-flex order-md-3 justify-content-lg-end">
-                                        <div>Nuovo Studente</div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
-                                            fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                                            <path
-                                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z">
-                                            </path>
-                                        </svg>
+                                    <div class="col-md-3 d-flex order-md-3 justify-content-lg-end align-items-center">
+                                        <div class="mx-1">Nuovo Studente</div>
+                                        <!-- off canvas -->
+                                        <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
+                                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
+                                                fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z">
+                                                </path>
+                                            </svg>
+                                        </button>
+
+                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                            aria-labelledby="offcanvasRightLabel">
+                                            <div class="offcanvas-header">
+                                                <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                                                    Inserisci un nuovo studente
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+
+                                                <form class="row g-3">
+
+                                                    <div class="col-6">
+                                                        <label for="inputName" class="form-label">Nome</label>
+                                                        <input type="text" class="form-control" id="inputName">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="inputCognome" class="form-label">Cognome</label>
+                                                        <input type="text" class="form-control" id="inputCognome">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="inputEmail4" class="form-label">Email</label>
+                                                        
+                                                        <div class="row">
+                                                            <div class="col-2" style="padding-right: 0;">
+
+                                                                <span class="input-group-text"
+                                                                    id="basic-addon1">@</span>
+                                                            </div>
+                                                            <div class="col-10" style="padding-left: 0;">
+                                                                <input type="text" class="form-control" id="inputEmail"
+                                                                    aria-label="Username"
+                                                                    aria-describedby="basic-addon1">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="inputPassword4" class="form-label">Password</label>
+                                                        <input type="password" class="form-control" id="inputPassword4">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="inputEmail4" class="form-label">Indirizzo
+                                                            Email</label>
+                                                        <div class="row">
+                                                            <div class="col-2" style="padding-right: 0;">
+
+                                                                <span class="input-group-text"
+                                                                    id="basic-addon1">@</span>
+                                                            </div>
+                                                            <div class="col-10" style="padding-left: 0;">
+                                                                <input type="text" class="form-control" id="inputEmail"
+                                                                    aria-label="Username"
+                                                                    aria-describedby="basic-addon1">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="inputPassword4" class="form-label">Password</label>
+                                                        <input type="password" class="form-control" id="inputPassword4">
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <label for="inputAddress2" class="form-label">Indirizzo</label>
+                                                        <input type="text" class="form-control" id="inputAddress2">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="inputCity" class="form-label">Città</label>
+                                                        <input type="text" class="form-control" id="inputCity">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="inputState" class="form-label">Stato</label>
+                                                        <select id="inputState" class="form-select">
+                                                            <option selected>Scegli...</option>
+                                                            <option>...</option>
+                                                            <option>...</option>
+                                                            <option>...</option>
+                                                            <option>...</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <label for="inputZip" class="form-label">CAP</label>
+                                                        <input type="text" class="form-control" id="inputZip">
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <input type="file" class="form-control" id="inputGroupFile01">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="gridCheck">
+                                                            <label class="form-check-label" for="gridCheck">
+                                                                Seleziona per proseguire
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <button type="submit" class="btn btn-primary">Salva</button>
+                                                        <button type="submit" class="btn btn-warning">Svuota</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+
+
                                     </div>
+
+                                    <!--  -->
 
                                     <div class="col-md-6 order-md-1">
                                         <h1 class="d-inline-block">Boolean</h1>
@@ -183,9 +302,12 @@
                                                 <path fill-rule="evenodd"
                                                     d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z" />
                                             </svg>
-                                            <span class="badge mb-1 d-none d-lg-inline-block ml-3 fw-normal">Boolean mobile app</span>
-                                            <span class="badge d-none d-lg-inline-block ml-3 fw-normal">Boolean web app</span>
-                                            <span class="badge d-none d-lg-inline-block ml-3 fw-normal">Boolean blog app</span>
+                                            <span class="badge mb-1 d-none d-lg-inline-block ml-3 fw-normal">Boolean
+                                                mobile app</span>
+                                            <span class="badge d-none d-lg-inline-block ml-3 fw-normal">Boolean web
+                                                app</span>
+                                            <span class="badge d-none d-lg-inline-block ml-3 fw-normal">Boolean blog
+                                                app</span>
                                             <div class="dropdown d-inline-block d-lg-none">
                                                 <button class="btn badge dropdown-toggle" type="button"
                                                     data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 50%;
@@ -221,7 +343,7 @@
                                 <div class="card">
                                     <h5 class="card-header">Prossime Classi</h5>
                                     <div class="card-body">
-                                        <table class="table" style="vertical-align: middle;">
+                                        <table class="table table-hover" style="vertical-align: middle;">
                                             <thead>
                                                 <tr class="text-center">
                                                     <th scope="col" class="text-start width-different">Nome</th>
@@ -539,17 +661,20 @@
                                             <li class="list-group-item">
                                                 <input class="form-check-input me-1" type="checkbox" value=""
                                                     id="firstCheckbox">
-                                                <label class="form-check-label" for="firstCheckbox">Kick off nuove classi</label>
+                                                <label class="form-check-label" for="firstCheckbox">Kick off nuove
+                                                    classi</label>
                                             </li>
                                             <li class="list-group-item">
                                                 <input class="form-check-input me-1" type="checkbox" value=""
                                                     id="secondCheckbox">
-                                                <label class="form-check-label" for="secondCheckbox">Lezione su Bootstrap 5 in classe #75</label>
+                                                <label class="form-check-label" for="secondCheckbox">Lezione su
+                                                    Bootstrap 5 in classe #75</label>
                                             </li>
                                             <li class="list-group-item">
                                                 <input class="form-check-input me-1" type="checkbox" value=""
                                                     id="thirdCheckbox">
-                                                <label class="form-check-label" for="thirdCheckbox">Controllare username github studenti</label>
+                                                <label class="form-check-label" for="thirdCheckbox">Controllare username
+                                                    github studenti</label>
                                             </li>
                                         </ul>
                                     </div>
